@@ -10,8 +10,8 @@ const RestaurantsDetails = ({route, navigation}) => {
   return (
     <View style= {{flex: 1}} >
       <AboutDetails route={route}/>
-     <MenuItems/>
-      <ViewCart />
+     <MenuItems restaurantName={route.params.name}  />
+      <ViewCart navigation ={navigation} restaurantName={route.params.name} />
     </View>
   );
 };
